@@ -1,8 +1,14 @@
 @import url("fonts/beforetherain/beforetherain.css");
 @import url("fonts/typola/typola.css");
+@import url("fonts/vijaya/vijaya.css");
+
+html, body {
+	height:100%;
+	margin: 0;
+}
 
 body {
-	background-image: url(../img/typewriter.png);
+	/*background-image: url(../img/typewriter.png);*/
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: bottom; 
@@ -14,6 +20,16 @@ body {
    margin-right: auto;
    max-width: initial;
 }
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li a {
+	font-family: 'typolatypola';
+}
+
+/* HOME */
 
 header {
 	background-color: white;
@@ -57,6 +73,47 @@ header {
 
 #home > section {
 	height: 25%;
+}
+
+/* POETRY */
+
+#poetry {
+	padding-top: 50px;
+}
+
+#poetry .main-article p {
+	font-family: 'vijayaregular';
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.poetry-main {
+	height: 70%;
+}
+
+.pageTitle {
+	font-family: 'typolatypola';
+	font-size: 3rem;
+}
+
+#poetry .mainArticleTitle {
+	font-family: 'vijayaregular';
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.theOh {
+	font-family: 'before_the_rainregular';
+}
+
+.main-article-wrapper {
+	height: 100%;
+}
+
+.main-article {
+	height: 100%;
+	overflow: auto;
+	padding: 0 4% 0 4%;
 }
 
 footer {
