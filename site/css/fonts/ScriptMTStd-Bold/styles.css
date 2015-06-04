@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'ScriptMTStd-Bold';
+  src: url('ScriptMTStd-Bold.eot?#iefix') format('embedded-opentype'),  url('ScriptMTStd-Bold.otf')  format('opentype'),
+	     url('ScriptMTStd-Bold.woff') format('woff'), url('ScriptMTStd-Bold.ttf')  format('truetype'), url('ScriptMTStd-Bold.svg#ScriptMTStd-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
