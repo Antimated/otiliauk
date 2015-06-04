@@ -15,7 +15,7 @@ body {
 }
 
 .wide {
-   width: 80%;
+   width: 90%;
    margin-left: auto;
    margin-right: auto;
    max-width: initial;
@@ -83,12 +83,13 @@ header {
 
 #poetry .main-article p {
 	font-family: 'vijayaregular';
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	text-align: center;
 }
 
 .poetry-main {
 	height: 70%;
+	border-bottom: 1px solid #B2B2B2;
 }
 
 .pageTitle {
@@ -100,10 +101,31 @@ header {
 	font-family: 'vijayaregular';
 	text-transform: capitalize;
 	text-align: center;
+	font-size: 3rem;
+}
+
+#poetry .side-article-title {
+	font-family: 'vijayaregular';
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2rem;
+}
+
+#poetry .right-side-content p, .responsive-slider {
+	font-family: 'vijayaregular';
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#poetry .left-side-content p {
+	font-family: 'typolatypola';
+	text-align: left;
+	font-size: 1.2rem;
 }
 
 .theOh {
 	font-family: 'before_the_rainregular';
+	text-align: right;
 }
 
 .main-article-wrapper {
@@ -114,6 +136,10 @@ header {
 	height: 100%;
 	overflow: auto;
 	padding: 0 4% 0 4%;
+}
+
+.slider-wrapper {
+	padding-top: 30px;
 }
 
 footer {
