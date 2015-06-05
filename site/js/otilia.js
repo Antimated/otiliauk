@@ -3,13 +3,18 @@ $('#home ul li').hover(function() {
    $(this).find('a img').show(100);        
 },function(){
    $(this).find('a img').hide(100);
-});
+})
 
 $('.main-article').hover(function(){
 	$( '.left-side-content, .right-side-content'  ).fadeTo('slow', 0.1);
 }, function(){
 	$( '.left-side-content, .right-side-content'  ).fadeTo('slow', 1);
-});
+})
+
+$('#bottom').click(function(){
+  $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
+  return false;
+})
 
 $('.responsive-slider').slick({
   dots: false,

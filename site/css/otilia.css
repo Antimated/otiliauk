@@ -2,16 +2,8 @@
 @import url("fonts/typola/typola.css");
 @import url("fonts/vijaya/vijaya.css");
 
-html, body {
-	height:100%;
-	margin: 0;
-}
-
 body {
-	/*background-image: url(../img/typewriter.png);*/
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom; 
+	
 }
 
 .wide {
@@ -19,6 +11,10 @@ body {
    margin-left: auto;
    margin-right: auto;
    max-width: initial;
+}
+
+nav {
+	
 }
 
 nav ul {
@@ -81,6 +77,10 @@ header {
 	padding-top: 50px;
 }
 
+#poetry > header {
+	height: 13%;
+}
+
 #poetry .main-article p {
 	font-family: 'vijayaregular';
 	font-size: 1.5rem;
@@ -89,7 +89,6 @@ header {
 
 .poetry-main {
 	height: 70%;
-	border-bottom: 1px solid #B2B2B2;
 }
 
 .pageTitle {
@@ -128,6 +127,11 @@ header {
 	text-align: right;
 }
 
+.theOh:hover {
+	color: #b20000;
+	cursor: pointer;
+}
+
 .main-article-wrapper {
 	height: 100%;
 }
@@ -139,13 +143,128 @@ header {
 }
 
 .slider-wrapper {
-	padding-top: 30px;
+	padding-top: 60px;
+	padding-bottom: 140px;
+	background-image: url(../img/typewriter-top.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom; 
+}
+
+.responsive-slider p {
+	padding: 10px;
+}
+
+#poetry a > img {
+	width: 35%;
+}
+
+#poetry-prev, #poetry-next {
+	line-height: 200px;
+}
+
+#poetry-prev img, #poetry-next img {
+	vertical-align: middle;
+}
+
+
+#poetry > section.slider-wrapper > div > div:nth-child(1){
+	text-align: right;
+}
+
+.menu {
+	text-align: center;
+}
+
+.menu ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE */
+        zoom:1;
+        *display: inline;
+}
+
+.menu li {
+        float: left;
+        padding: 2px 15px;
+}
+
+.menu li a {
+	font-size: 3rem;
+	color: black;
 }
 
 footer {
 	background-color: transparent;
-	height: 5%;
+	height: 30%;
+	color: white;
+	text-align: center;
+	font-family: 'typolatypola';
+	background-image: url(../img/typewriter-bottom.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom; 
+}
+
+#copyright {
+	background-color: #0a0a0a;
 	color: white;
 	text-align: center;
 	font-family: 'typolatypola';
 }
+
+
+/* Small screens */
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+.wide {
+	width: 100%;
+}
+
+.theOh {
+	text-align: center;
+}
+
+footer {
+	height: 10%;
+}
+
+.menu li {
+	float: none;
+	border-bottom: solid 1px #ababab;
+}
+
+.menu li a {
+	font-size: 2rem;
+}
+
+#poetry a img {
+	width: 50px;
+}
+
+.controls {
+	padding: 5px;
+}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
