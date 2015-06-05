@@ -1,6 +1,8 @@
 @import url("fonts/beforetherain/beforetherain.css");
 @import url("fonts/typola/typola.css");
 @import url("fonts/vijaya/vijaya.css");
+@import url("fonts/script/script.css");
+@import url("fonts/cordia/cordia.css");
 
 body {
 	
@@ -73,11 +75,11 @@ header {
 
 /* POETRY */
 
-#poetry {
+#poetry, #prose {
 	padding-top: 50px;
 }
 
-#poetry > header {
+#poetry > header, #prose > header {
 	height: 13%;
 }
 
@@ -116,7 +118,7 @@ header {
 	font-size: 1.2rem;
 }
 
-#poetry .left-side-content p {
+#poetry .left-side-content p, #prose .left-side-content p {
 	font-family: 'typolatypola';
 	text-align: left;
 	font-size: 1.2rem;
@@ -193,6 +195,40 @@ header {
 .menu li a {
 	font-size: 3rem;
 	color: black;
+}
+
+/* PROSE */
+
+#prose .mainArticleTitle {
+	font-family: 'script';
+	font-size: 3rem;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+#prose .main-article p {
+	font-family: 'cordia_newregular';
+	font-size: 1.7rem;
+}
+
+#prose .right-side-content h2 {
+	font-family: 'script';
+	font-size: 3rem;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+#prose .right-side-content h2 p {
+	font-family: 'cordia_newregular';
+}
+
+.prose-main {
+	padding-bottom: 140px;
+	background-image: url(../img/typewriter-top.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom; 
+	height: 100%;
 }
 
 footer {
