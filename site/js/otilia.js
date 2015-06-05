@@ -5,6 +5,12 @@ $('#home ul li').hover(function() {
    $(this).find('a img').hide(100);
 });
 
+$('.main-article').hover(function(){
+	$( '.left-side-content, .right-side-content'  ).fadeTo('slow', 0.1);
+}, function(){
+	$( '.left-side-content, .right-side-content'  ).fadeTo('slow', 1);
+});
+
 $('.responsive-slider').slick({
   dots: false,
   arrows: false,
