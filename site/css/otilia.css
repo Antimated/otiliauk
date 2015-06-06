@@ -79,11 +79,11 @@ header {
 
 /* POETRY */
 
-#poetry, #prose {
+#poetry, #prose, #instagram {
 	padding-top: 50px;
 }
 
-#poetry > header, #prose > header {
+#poetry > header, #prose > header, #instagram > header {
 	height: 13%;
 }
 
@@ -234,6 +234,38 @@ header {
 	background-position: bottom; 
 	height: 100%;
 }
+
+/* INSTAGRAM */
+
+.instagram-main {
+	padding-bottom: 140px;
+	background-image: url(../img/typewriter-top.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom; 
+	height: 70%;
+}
+
+#instagram .mainArticleTitle {
+	text-transform: uppercase;
+	font-family: 'typolatypola';
+	text-align: center;
+}
+
+#instagram .left-side-content h2 {
+	font-family: 'typolatypola';
+	text-transform: uppercase;
+}
+
+#insta-main {
+	width: 100%;
+}
+
+#insta-main a, #insta-main a img {
+	width: 33.33%;
+}
+
+
 
 footer {
 	background-color: transparent;

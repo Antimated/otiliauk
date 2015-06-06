@@ -5,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Otilia.uk | Instagram</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/otilia.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
-  <body>
+  <body id="instagram">
+
+    <header>
+      <div class="row wide">
+        <div class="large-12 columns">
+          <h2 id="bottom" class="theOh">Otilia</h2>
+        </div>
+      </div>
+    </header>
     
-    <section>
-      <div class="row">
-        <div class="large-4 medium-4 small-1 columns">
+    <section class="instagram-main">
+      <div class="row wide main-article-wrapper">
+        <div class="large-4 medium-4 small-1 columns left-side-content">
           <h2>all</h2>
         </div>
-        <div class="large-4 medium-4 small-1 columns">
-          <h2>instagram</h2>
+        <div class="large-4 medium-4 small-1 columns main-article">
+          <h2 class="mainArticleTitle">instagram</h2>
+          <div id="insta-main"></div>
         </div>
         <div class="large-4 medium-4 small-1 columns">
-          <h2>o</h2>
+          <h2></h2>
         </div>
       </div>
     </section>
@@ -26,8 +36,8 @@
     
 
     <nav>
-      <div class="row">
-          <div class="large-12 columns">
+      <div class="row wide">
+          <div class="large-12 columns menu">
              <ul>
                <li><a href=""><span></span>poetry</a></li>
                <li><a href=""><span></span>prose</a></li>
@@ -40,21 +50,28 @@
     </nav>
 
     <footer>
-      <div class="row">
-          <div class="large-12 columns">Designed &amp; Developed by CocoonLabs.uk</div>
+      <div class="row wide">
+          <div class="large-12 columns"></div>
       </div>
     </footer>
+    <section  id="copyright">
+      <div class="row wide">
+        <div class="large-12 columns"><p>Concieved &amp; Morphed by CocoonLabs.uk</p></div>
+      </div>
+    </section>
 
 
     
     <script src="js/vendor/jquery.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script src="js/otilia.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
 
       
     var feed = new Instafeed({
+        target: 'insta-main',
         get: 'user',
         userId: 1173945431,
         accessToken: '1173945431.467ede5.24636994db8d4ec4b650436f621bdd47',
