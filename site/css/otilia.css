@@ -79,11 +79,11 @@ header {
 
 /* POETRY */
 
-#poetry, #prose, #instagram {
+#poetry, #prose, #instagram, #other {
 	padding-top: 50px;
 }
 
-#poetry > header, #prose > header, #instagram > header {
+#poetry > header, #prose > header, #instagram > header, #other > header {
 	height: 13%;
 }
 
@@ -93,7 +93,7 @@ header {
 	text-align: center;
 }
 
-.poetry-main {
+.poetry-main, .other-main {
 	height: 70%;
 }
 
@@ -226,7 +226,7 @@ header {
 	font-family: 'cordia_newregular';
 }
 
-.prose-main {
+.prose-main, .other-main {
 	padding-bottom: 140px;
 	background-image: url(../img/typewriter-top.png);
 	background-repeat: no-repeat;
@@ -243,7 +243,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: bottom; 
-	height: 70%;
+	height: auto;
 }
 
 #instagram .mainArticleTitle {
@@ -257,7 +257,12 @@ header {
 	text-transform: uppercase;
 }
 
-#insta-main {
+#instagram .right-side-content h2 {
+	font-family: 'typolatypola';
+	text-transform: lowercase;
+}
+
+#insta-main, #insta-left, #insta-right-top, #insta-right-bottom {
 	width: 100%;
 }
 
@@ -265,7 +270,40 @@ header {
 	width: 33.33%;
 }
 
+#insta-left a, #insta-left a img, #insta-right-top a, #insta-right-top a img, #insta-right-bottom a, #insta-right-bottom a img {
+	width: 50%;
+}
 
+/* OTHER */
+
+#other .mainArticleTitle {
+	text-transform: capitalize;
+	font-family: 'typolatypola';
+	text-align: center;
+}
+
+#other .main-article p {
+	font-family: 'cordia_newregular';
+}
+
+#other .left-side-content h2:nth-child(1) {
+	font-family: 'typolatypola';
+	text-transform: lowercase;
+}
+
+#other .left-side-content h2:nth-child(2) {
+	font-family: 'typolatypola';
+	text-transform: uppercase;
+}
+
+#other .right-side-content h2 {
+	font-family: 'typolatypola';
+	text-transform: capitalize;
+}
+
+#other .right-side-content p {
+	font-family: 'cordia_newregular';
+}
 
 footer {
 	background-color: transparent;
