@@ -79,11 +79,11 @@ header {
 
 /* POETRY */
 
-#poetry, #prose, #instagram, #other {
+#poetry, #prose, #instagram, #other, #contact {
 	padding-top: 50px;
 }
 
-#poetry > header, #prose > header, #instagram > header, #other > header {
+#poetry > header, #prose > header, #instagram > header, #other > header, #contact > header {
 	height: 13%;
 }
 
@@ -303,6 +303,43 @@ header {
 
 #other .right-side-content p {
 	font-family: 'cordia_newregular';
+}
+
+/* CONTACT */
+
+#contact header .theOh {
+	text-align: center;
+}
+
+#contact .contact-main h2, #contact .contact-main h4 {
+	text-align: center;
+	font-family: 'typolatypola';
+}
+
+input[type="text"], input[type="email"] {
+	box-shadow: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px dotted black;
+}
+
+textarea {
+	border: 1px dotted black;
+	position: relative;
+}
+
+#message {
+	position: absolute;
+	top: -10px;
+	z-index: 10;
+	background-color: white;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+label {
+	font-family: 'typolatypola';
 }
 
 footer {
