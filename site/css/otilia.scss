@@ -17,19 +17,31 @@ $page-header-height: 13%;
 @mixin logo($position){
 	font-family: 'before_the_rainregular';
 	text-align: $position;
+	@media only screen and (max-width: 40em) {
+   		text-align: center;
+   	}
 	&:hover {
 		color: #b20000;
 		cursor: pointer;
 	}
 }
 
+@mixin article-title($case, $font, $titleposition){
+	text-transform: $case;
+	font-family: $font;
+	text-align: $titleposition;
+}
+
 /* GLOBALS */
 
 .wide {
-   width: 90%;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: initial;
+   	width: 90%;
+   	margin-left: auto;
+   	margin-right: auto;
+   	max-width: initial;
+   	@media only screen and (max-width: 40em) {
+   		width: 100%;
+   }
 }
 
 nav {
@@ -56,9 +68,16 @@ nav {
         li {
         	float: left;
         	padding: 2px 15px;
+        		@media only screen and (max-width: 40em) {
+   					float: none;
+					border-bottom: solid 1px #ababab;
+   				}
         	a {
         		font-size: 3rem;
 				color: $text-color;
+				@media only screen and (max-width: 40em) {
+   					font-size: 2rem;
+   				}
         	}
         }
 	}
@@ -82,6 +101,42 @@ header {
 	height: 100%;
 	overflow: auto;
 	padding: 0 4% 0 4%;
+}
+
+.controls {
+	@media only screen and (max-width: 40em) {
+   		padding: 5px;
+   	}
+}
+
+.main {
+	padding-bottom: 140px;
+	background-image: url(../img/typewriter-top.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom; 
+}
+
+footer {
+	background-color: transparent;
+	height: 30%;
+	@media only screen and (max-width: 40em) {
+   		height: 10%;
+   	}
+	color: white;
+	text-align: center;
+	font-family: 'typolatypola';
+	background-image: url(../img/typewriter-bottom.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom; 
+}
+
+#copyright {
+	background-color: #0a0a0a;
+	color: white;
+	text-align: center;
+	font-family: 'typolatypola';
 }
 
 /* HOME */
@@ -137,48 +192,50 @@ header {
 		height: 70%;
 	}
 	.mainArticleTitle {
-	font-family: 'vijayaregular';
-	text-transform: capitalize;
-	text-align: center;
-	font-size: 3rem;
+	@include article-title(capitalize, 'vijayaregular', center);
+		font-size: 3rem;
 	}
 	.side-article-title {
-	font-family: 'vijayaregular';
-	text-transform: capitalize;
-	text-align: center;
-	font-size: 2rem;
+		font-family: 'vijayaregular';
+		text-transform: capitalize;
+		text-align: center;
+		font-size: 2rem;
 	}
 	.right-side-content p, .responsive-slider {
-	font-family: 'vijayaregular';
-	text-align: center;
-	font-size: 1.2rem;
+		font-family: 'vijayaregular';
+		text-align: center;
+		font-size: 1.2rem;
 	}
 	.left-side-content p {
-	font-family: 'typolatypola';
-	text-align: left;
-	font-size: 1.2rem;
+		font-family: 'typolatypola';
+		text-align: left;
+		font-size: 1.2rem;
 	}
 	.theOh {
 		@include logo(right);
 	}
 	.slider-wrapper {
-	padding-top: 60px;
-	padding-bottom: 140px;
-	background-image: url(../img/typewriter-top.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: bottom;
-	> div > div:nth-child(1){
-		text-align: right;
-		} 
+		padding-top: 60px;
+		padding-bottom: 140px;
+		background-image: url(../img/typewriter-top.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+			> div > div:nth-child(1){
+				text-align: right;
+			} 
 	}
 	.responsive-slider p {
-	padding: 10px;
-	}
-	a {
-		> img {
-			width: 35%;
+		padding: 10px;
 		}
+		a {
+			> img {
+				width: 35%;
+				@media only screen and (max-width: 40em) {
+   					width: 50px;
+   				}
+
+			}
 	}
 	#prev, #next {
 		line-height: 200px;
@@ -190,3 +247,141 @@ header {
 
 /* PROSE */
 
+#prose {
+	.mainArticleTitle {
+	@include article-title(capitalize, 'script', center);
+	font-size: 3rem;
+	}
+	.main-article{
+		p {
+			font-family: 'cordia_newregular';
+			font-size: 1.7rem;
+		}
+	}
+	.right-side-content {
+		h2 {
+			font-family: 'script';
+			font-size: 3rem;
+			text-transform: capitalize;
+			text-align: center;
+		}
+		p {
+			font-family: 'cordia_newregular';
+		}
+	}
+	.prose-main, .other-main {
+	@extend .main;
+	height: 100%;
+	}
+}
+
+/* INSTAGRAM */
+
+#instagram {
+	.instagram-main {
+	@extend .main;
+	height: auto;
+	}
+	.mainArticleTitle {
+	@include article-title(uppercase, 'typolatypola', center);
+	}
+	.left-side-content {
+		h2 {
+			font-family: 'typolatypola';
+			text-transform: uppercase;
+		}
+	}
+	.right-side-content {
+		h2 {
+			font-family: 'typolatypola';
+			text-transform: lowercase;
+		}
+	}
+	#insta-main, #insta-left, #insta-right-top, #insta-right-bottom {
+	width: 100%;
+	}
+	#insta-main {
+		a {
+			width: 33.33%;
+			img {
+				width: 33.33%;
+			}
+		}
+	}
+	#insta-left a, #insta-left a img, #insta-right-top a, #insta-right-top a img, #insta-right-bottom a, #insta-right-bottom a img {
+	width: 50%;
+	}
+}
+
+/* OTHER */
+
+#other {
+	.mainArticleTitle {
+	@include article-title(capitalize, 'typolatypola', center);
+		p {
+			font-family: 'cordia_newregular';	
+		}
+	}
+	.left-side-content {
+		h2 {
+			&:nth-child(1) {
+				font-family: 'typolatypola';
+				text-transform: lowercase;
+			}
+			&:nth-child(2) {
+				font-family: 'typolatypola';
+				text-transform: uppercase;
+			}
+		}
+	}
+	.right-side-content {
+		h2 {
+			font-family: 'typolatypola';
+			text-transform: capitalize;
+		}
+		p {
+			font-family: 'cordia_newregular';
+		}
+	}
+
+}
+
+/* CONTACT */
+
+#contact {
+	header {
+		.theOh {
+			@include logo(center);
+		}
+	}
+	.contact-main {
+		h2, h4 {
+			text-align: center;
+			font-family: 'typolatypola';
+		}
+	}
+	input {
+		&[type="text"], &[type="email"] {
+			box-shadow: none;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px dotted black;
+		}
+	}
+	textarea {
+		border: 1px dotted black;
+		position: relative;
+	}
+	.message {
+		position: absolute;
+		top: -10px;
+		z-index: 10;
+		background-color: white;
+		padding-right: 10px;
+		padding-bottom: 5px;
+	}
+	label {
+		font-family: 'typolatypola';
+	}
+}

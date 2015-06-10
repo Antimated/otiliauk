@@ -1,0 +1,349 @@
+@import url("fonts/beforetherain/beforetherain.css");
+@import url("fonts/typola/typola.css");
+@import url("fonts/vijaya/vijaya.css");
+@import url("fonts/script/script.css");
+@import url("fonts/cordia/cordia.css");
+/* GLOBALS */
+.wide {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+}
+@media only screen and (max-width: 40em) {
+  .wide {
+    width: 100%;
+  }
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li a {
+  font-family: 'typolatypola';
+}
+nav ul li a:hover {
+  color: #b20000;
+}
+
+.menu {
+  text-align: center;
+}
+.menu ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* For IE */
+  zoom: 1;
+  *display: inline;
+}
+.menu ul li {
+  float: left;
+  padding: 2px 15px;
+}
+@media only screen and (max-width: 40em) {
+  .menu ul li {
+    float: none;
+    border-bottom: solid 1px #ababab;
+  }
+}
+.menu ul li a {
+  font-size: 3rem;
+  color: black;
+}
+@media only screen and (max-width: 40em) {
+  .menu ul li a {
+    font-size: 2rem;
+  }
+}
+
+header {
+  background-color: white;
+  height: 30%;
+}
+
+.pageTitle {
+  font-family: 'typolatypola';
+  font-size: 3rem;
+}
+
+.main-article-wrapper {
+  height: 100%;
+}
+
+.main-article {
+  height: 100%;
+  overflow: auto;
+  padding: 0 4% 0 4%;
+}
+
+@media only screen and (max-width: 40em) {
+  .controls {
+    padding: 5px;
+  }
+}
+
+.main, #prose .prose-main, #prose .other-main, #instagram .instagram-main {
+  padding-bottom: 140px;
+  background-image: url(../img/typewriter-top.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+footer {
+  background-color: transparent;
+  height: 30%;
+  color: white;
+  text-align: center;
+  font-family: 'typolatypola';
+  background-image: url(../img/typewriter-bottom.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+@media only screen and (max-width: 40em) {
+  footer {
+    height: 10%;
+  }
+}
+
+#copyright {
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  font-family: 'typolatypola';
+}
+
+/* HOME */
+#home h1 {
+  font-family: 'before_the_rainregular';
+  text-transform: capitalize;
+  padding-top: 100px;
+  font-size: 3.5rem;
+  text-align: center;
+}
+#home ul {
+  list-style: none;
+  width: inherit;
+  margin: 0 auto;
+}
+#home ul li {
+  text-align: center;
+}
+#home ul li a {
+  font-family: 'typolatypola';
+  font-size: 3rem;
+  color: black;
+  line-height: 3.5rem;
+}
+#home ul li a img {
+  height: 2rem;
+  display: none;
+}
+#home > nav {
+  height: 40%;
+  background-color: transparent;
+}
+#home > section {
+  height: 25%;
+}
+
+/* POETRY */
+#poetry {
+  padding-top: 50px;
+}
+#poetry > header {
+  height: 13%;
+}
+#poetry .main-article p {
+  font-family: 'vijayaregular';
+  font-size: 1.5rem;
+  text-align: center;
+}
+#poetry .poetry-main {
+  height: 70%;
+}
+#poetry .mainArticleTitle {
+  text-transform: capitalize;
+  font-family: "vijayaregular";
+  text-align: center;
+  font-size: 3rem;
+}
+#poetry .side-article-title {
+  font-family: 'vijayaregular';
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+}
+#poetry .right-side-content p, #poetry .responsive-slider {
+  font-family: 'vijayaregular';
+  text-align: center;
+  font-size: 1.2rem;
+}
+#poetry .left-side-content p {
+  font-family: 'typolatypola';
+  text-align: left;
+  font-size: 1.2rem;
+}
+#poetry .theOh {
+  font-family: 'before_the_rainregular';
+  text-align: right;
+}
+@media only screen and (max-width: 40em) {
+  #poetry .theOh {
+    text-align: center;
+  }
+}
+#poetry .theOh:hover {
+  color: #b20000;
+  cursor: pointer;
+}
+#poetry .slider-wrapper {
+  padding-top: 60px;
+  padding-bottom: 140px;
+  background-image: url(../img/typewriter-top.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+#poetry .slider-wrapper > div > div:nth-child(1) {
+  text-align: right;
+}
+#poetry .responsive-slider p {
+  padding: 10px;
+}
+#poetry a > img {
+  width: 35%;
+}
+@media only screen and (max-width: 40em) {
+  #poetry a > img {
+    width: 50px;
+  }
+}
+#poetry #prev, #poetry #next {
+  line-height: 200px;
+}
+#poetry #prev img, #poetry #next img {
+  vertical-align: middle;
+}
+
+/* PROSE */
+#prose .mainArticleTitle {
+  text-transform: capitalize;
+  font-family: "script";
+  text-align: center;
+  font-size: 3rem;
+}
+#prose .main-article p {
+  font-family: 'cordia_newregular';
+  font-size: 1.7rem;
+}
+#prose .right-side-content h2 {
+  font-family: 'script';
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+#prose .right-side-content p {
+  font-family: 'cordia_newregular';
+}
+#prose .prose-main, #prose .other-main {
+  height: 100%;
+}
+
+/* INSTAGRAM */
+#instagram .instagram-main {
+  height: auto;
+}
+#instagram .mainArticleTitle {
+  text-transform: uppercase;
+  font-family: "typolatypola";
+  text-align: center;
+}
+#instagram .left-side-content h2 {
+  font-family: 'typolatypola';
+  text-transform: uppercase;
+}
+#instagram .right-side-content h2 {
+  font-family: 'typolatypola';
+  text-transform: lowercase;
+}
+#instagram #insta-main, #instagram #insta-left, #instagram #insta-right-top, #instagram #insta-right-bottom {
+  width: 100%;
+}
+#instagram #insta-main a {
+  width: 33.33%;
+}
+#instagram #insta-main a img {
+  width: 33.33%;
+}
+#instagram #insta-left a, #instagram #insta-left a img, #instagram #insta-right-top a, #instagram #insta-right-top a img, #instagram #insta-right-bottom a, #instagram #insta-right-bottom a img {
+  width: 50%;
+}
+
+/* OTHER */
+#other .mainArticleTitle {
+  text-transform: capitalize;
+  font-family: "typolatypola";
+  text-align: center;
+}
+#other .mainArticleTitle p {
+  font-family: 'cordia_newregular';
+}
+#other .left-side-content h2:nth-child(1) {
+  font-family: 'typolatypola';
+  text-transform: lowercase;
+}
+#other .left-side-content h2:nth-child(2) {
+  font-family: 'typolatypola';
+  text-transform: uppercase;
+}
+#other .right-side-content h2 {
+  font-family: 'typolatypola';
+  text-transform: capitalize;
+}
+#other .right-side-content p {
+  font-family: 'cordia_newregular';
+}
+
+/* CONTACT */
+#contact header .theOh {
+  font-family: 'before_the_rainregular';
+  text-align: center;
+}
+@media only screen and (max-width: 40em) {
+  #contact header .theOh {
+    text-align: center;
+  }
+}
+#contact header .theOh:hover {
+  color: #b20000;
+  cursor: pointer;
+}
+#contact .contact-main h2, #contact .contact-main h4 {
+  text-align: center;
+  font-family: 'typolatypola';
+}
+#contact input[type="text"], #contact input[type="email"] {
+  box-shadow: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dotted black;
+}
+#contact textarea {
+  border: 1px dotted black;
+  position: relative;
+}
+#contact .message {
+  position: absolute;
+  top: -10px;
+  z-index: 10;
+  background-color: white;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+#contact label {
+  font-family: 'typolatypola';
+}
