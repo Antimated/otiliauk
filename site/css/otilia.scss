@@ -1,0 +1,192 @@
+@import url("fonts/beforetherain/beforetherain.css");
+@import url("fonts/typola/typola.css");
+@import url("fonts/vijaya/vijaya.css");
+@import url("fonts/script/script.css");
+@import url("fonts/cordia/cordia.css");
+
+// VARIABLES
+
+$bg-color: white;
+$text-color: black;
+$text-hover: #b20000;
+$page-top-padding: 50px;
+$page-header-height: 13%;
+
+// MIXINS
+
+@mixin logo($position){
+	font-family: 'before_the_rainregular';
+	text-align: $position;
+	&:hover {
+		color: #b20000;
+		cursor: pointer;
+	}
+}
+
+/* GLOBALS */
+
+.wide {
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+nav {
+	ul {
+	  list-style: none;
+	  li a {
+	    font-family: 'typolatypola';
+	    &:hover {
+	      color: #b20000;
+	    }
+	  }
+	}
+}
+
+.menu {
+	text-align: center;
+	ul {
+		display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE */
+        zoom:1;
+        *display: inline;
+        li {
+        	float: left;
+        	padding: 2px 15px;
+        	a {
+        		font-size: 3rem;
+				color: $text-color;
+        	}
+        }
+	}
+}
+
+header {
+	background-color: $bg-color;
+	height: 30%;
+}
+
+.pageTitle {
+	font-family: 'typolatypola';
+	font-size: 3rem;
+}
+
+.main-article-wrapper {
+	height: 100%;
+}
+
+.main-article {
+	height: 100%;
+	overflow: auto;
+	padding: 0 4% 0 4%;
+}
+
+/* HOME */
+
+#home {
+	h1 {
+		font-family: 'before_the_rainregular';
+		text-transform: capitalize;
+		padding-top: 100px;
+		font-size: 3.5rem;
+		text-align: center;
+	}
+	ul {
+		list-style: none;
+		width: inherit;
+		margin: 0 auto;
+		li {
+			text-align: center;
+			a {
+				font-family: 'typolatypola';
+				font-size: 3rem;
+				color: $text-color;
+				line-height: 3.5rem;
+				img {
+					height: 2rem;
+					display: none;
+				}
+			}
+		}
+	}
+	> nav {
+		height: 40%;
+		background-color: transparent;
+	}
+	> section {
+		height: 25%;
+	}
+}
+
+/* POETRY */
+
+#poetry {
+	padding-top: $page-top-padding;
+	> header {
+		height: $page-header-height;
+	}
+	.main-article p {
+		font-family: 'vijayaregular';
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.poetry-main {
+		height: 70%;
+	}
+	.mainArticleTitle {
+	font-family: 'vijayaregular';
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 3rem;
+	}
+	.side-article-title {
+	font-family: 'vijayaregular';
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 2rem;
+	}
+	.right-side-content p, .responsive-slider {
+	font-family: 'vijayaregular';
+	text-align: center;
+	font-size: 1.2rem;
+	}
+	.left-side-content p {
+	font-family: 'typolatypola';
+	text-align: left;
+	font-size: 1.2rem;
+	}
+	.theOh {
+		@include logo(right);
+	}
+	.slider-wrapper {
+	padding-top: 60px;
+	padding-bottom: 140px;
+	background-image: url(../img/typewriter-top.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	> div > div:nth-child(1){
+		text-align: right;
+		} 
+	}
+	.responsive-slider p {
+	padding: 10px;
+	}
+	a {
+		> img {
+			width: 35%;
+		}
+	}
+	#prev, #next {
+		line-height: 200px;
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+
+/* PROSE */
+

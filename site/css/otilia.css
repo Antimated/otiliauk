@@ -4,9 +4,7 @@
 @import url("fonts/script/script.css");
 @import url("fonts/cordia/cordia.css");
 
-body {
-	
-}
+
 
 .wide {
    width: 90%;
@@ -15,9 +13,6 @@ body {
    max-width: initial;
 }
 
-nav {
-	
-}
 
 nav ul {
 	list-style: none;
@@ -165,11 +160,11 @@ header {
 	width: 35%;
 }
 
-#poetry-prev, #poetry-next {
+#prev, #next {
 	line-height: 200px;
 }
 
-#poetry-prev img, #poetry-next img {
+#prev img, #next img {
 	vertical-align: middle;
 }
 

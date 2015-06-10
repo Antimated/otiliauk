@@ -53,10 +53,10 @@ $('.responsive-slider').slick({
   ]
 });
 
-$('#poetry-next').click(function(){
+$('#next').click(function(){
     $(".responsive-slider").slick('slickNext');
 });
 
-$('#poetry-prev').click(function(){
+$('#prev').click(function(){
     $(".responsive-slider").slick('slickPrev');
 });
