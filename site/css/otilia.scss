@@ -5,6 +5,7 @@
 @import url("fonts/cordia/cordia.css");
 
 // note to self: add font stacks as variables
+// note to self: possibly add bourbon
 
 // VARIABLES
 
@@ -354,12 +355,16 @@ footer {
 	header {
 		.theOh {
 			@include logo(center);
+			padding-top: $page-top-padding;
 		}
 	}
 	.contact-main {
 		h2, h4 {
 			text-align: center;
 			font-family: 'typolatypola';
+		}
+		p {
+			text-align: center;
 		}
 	}
 	input {
@@ -374,6 +379,17 @@ footer {
 	textarea {
 		border: 1px dotted black;
 		position: relative;
+	}
+	button {
+		display: inline-block;
+  		position: absolute;
+  		z-index: 10;
+  		top: 182px;
+  		right: 15px;
+  		background-color: transparent;
+  		color: $text-color;
+  		font-family: 'typolatypola';
+  		font-size: 1.5rem;
 	}
 	.message {
 		position: absolute;

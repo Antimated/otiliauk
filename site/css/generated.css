@@ -311,6 +311,7 @@ footer {
 #contact header .theOh {
   font-family: 'before_the_rainregular';
   text-align: center;
+  padding-top: 50px;
 }
 @media only screen and (max-width: 40em) {
   #contact header .theOh {
@@ -325,6 +326,9 @@ footer {
   text-align: center;
   font-family: 'typolatypola';
 }
+#contact .contact-main p {
+  text-align: center;
+}
 #contact input[type="text"], #contact input[type="email"] {
   box-shadow: none;
   border-top: none;
@@ -335,6 +339,16 @@ footer {
 #contact textarea {
   border: 1px dotted black;
   position: relative;
+}
+#contact button {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 182px;
+  right: 15px;
+  background-color: white;
+  color: black;
+  font-family: 'typolatypola';
 }
 #contact .message {
   position: absolute;
